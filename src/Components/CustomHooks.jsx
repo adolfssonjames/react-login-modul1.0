@@ -1,8 +1,8 @@
 import {useState, useEffect} from 'react';
 
 
-const CustomHooks = (callback, FormValidation) => {
-    const [values, setValues] = useState ({           //det aktiva värdet, och förrändringsvärde
+const CustomHooks = (callback, FormValidation) => {     //definerar parameter
+    const [values, setValues] = useState ({           //det aktiva/initiala värdet, och förrändringsvärde/uppdateringsvärde
         username: '',                                   //targetar username i formuläret. staten är tom
         email:'',                                       //targetar email i formuläret
         password:'',                                    //targetar lösenord i formuläret
@@ -13,8 +13,8 @@ const CustomHooks = (callback, FormValidation) => {
 
 
     const handleChange = e => {                         //hanterar ändringar i formuläret
-        const { name, value } = e.target;
-        setValues({
+        const { name, value } = e.target;               //name & value targetar name i formulärets inputs med hjälp av e.target
+        setValues({                                     //uppdateringsvärde
             ...values,
             [name]: value
         });
@@ -28,14 +28,14 @@ const CustomHooks = (callback, FormValidation) => {
     };
 
     useEffect(() => {
-        if (Object.keys(errors).length === 0 && isSubmit) {
-            callback();
+        if (Object.keys(errors).length === 0 && isSubmit) {       // om det finns errors så displayar error annars inte / om det är 0 errors = sumbitar formen
+            callback();                                             
         }
     }, 
-        [errors, isSubmit, callback]
+        [errors, isSubmit, callback]                 // useeffect körs endast om dessa dependencies innanför denna array körs/ändras.
     );
 
-    return { handleChange, values, handleSubmit, errors };              // Kör alla ovanstående funktioner
+    return { handleChange, values, handleSubmit, errors };              // Kör alla ovanstående funktioner o props som är i objektet
 };
 
 

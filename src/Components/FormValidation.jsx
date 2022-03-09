@@ -1,16 +1,16 @@
-export default function FormValidation(values) {
+export default function FormValidation(values) {                //passar/skickar in values
     let errors = {}
 
-    if(!values.username.trim()) {  //trim tar bort whitespaces
+    if(!values.username.trim()) {                           //trim tar bort whitespaces. Om values.username inte är sant så körs error med stringen nedan.
         errors.username = "Username required" ;
     }
 
 
     
-    if(!values.email) { // om inget värde anges körs denna error nedan
+    if(!values.email) {                                  // om inget värde anges körs denna error nedan
         errors.email = "Email required" ;
     } else if(!/\S+@\S+\.\S+/.test(values.email)) {
-        errors.email = "Email is not correct"; //om det finns ett försök till email men inget email hittas, så körs denna error
+        errors.email = "Email is not correct";          //om det finns ett försök till email men inget email hittas, så körs denna error
 
     }
 
