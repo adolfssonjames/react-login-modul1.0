@@ -5,6 +5,39 @@
   align-items: center;
   justify-content: center;
 }
+.navbar, h2, h3 {
+  color: #fff;
+}
+.login-user-input, .login-pass-input {
+  margin-top: 15px;
+  margin-right: 10px;
+  font-size: larger;
+  outline: none;
+  border-radius: 2px;
+  height: 40px;
+  width: 100%;
+  border: none;
+}
+
+.login-button{
+  margin-top: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height:40px;
+  width:100%;
+  font-size: larger;
+  border-radius: 2px;
+    background: linear-gradient(
+      270deg,
+      rgb(9, 26, 36) 0%,
+      rgb(2, 167, 170) 100%
+    );
+    border: none;
+    color: #fff;
+ 
+  
+}
 .orbit-bild {
   padding-left: 20px;
   padding-top: 40px;
@@ -13,7 +46,11 @@
   margin-top: 40px;
  
 }
-.form-container {
+.orbit-bild2 {
+  height:20%;
+
+}
+.form-container, .form-container2 {
     margin: 35px auto; /* placerar modul-diven  */
     width: 1000px;
     position: relative;
@@ -35,13 +72,17 @@
   }
   
   
-  .form-content-right {
+  .form-content-right, .form-container2 {
     border-radius: 0 10px 10px 0;
     position: relative;
     background: linear-gradient(145deg, rgba(0, 247, 255, 0.849) 0%, rgba(17, 17, 17, 0.603) 60%);
   }
-  
-  .form {
+  .form-container2{
+    border-radius: 10px;
+    width:600px;
+    height: 400px;
+  }
+  .form, .login-form {
     position: absolute;
     top: 50%;
     left: 50%;
@@ -118,7 +159,16 @@
       rgb(10, 78, 73) 0%,
       rgb(12, 250, 238) 100%
     );
-    transition: all 0.4s ease-out;
+   
+  }
+  .login-button:hover {
+    cursor: pointer;
+    background: linear-gradient(
+      270deg,
+      rgb(10, 78, 73) 0%,
+      rgb(12, 250, 238) 100%
+    );
+    
   }
   
   .form-input-login {
@@ -167,8 +217,48 @@
   justify-content: center; 
   }
 
-  .re {
-  margin-left: 1%;
-  width: 98%;
- 
+  
+  .meny, li {
+    display: flex;
+    align-items: center;
+    justify-content: center; 
+    margin:5px;
+    list-style: none;
+    text-decoration:wavy;
+    font-size: larger;
+    color: white;
+  
+  }
+  .meny > button {
+    margin: 5px;
+    border-radius: 2px;
+    background: linear-gradient(
+      270deg,
+      rgba(255, 255, 255, 0.8) 0%,
+      rgba(2, 167, 170,0.8) 100%
+    );
+    outline: none;
+    border: none;
+    color: #fff;
+    font-size: 1rem;
+  }
+  .meny > button:hover {
+    
+    background: linear-gradient(
+      270deg,
+      rgba(255, 255, 255, 0.8) 0%,
+      rgba(160, 250, 252, 0.8) 100%
+    );
+    outline: none;
+    border: none;
+    color: #fff;
+    font-size: 1rem;
+  }
+
+  .welcome-gif {
+    margin-top: 25px;
+   margin-left:6%;
+    height: 250px;
+    border-radius: 15px;
+   
   }

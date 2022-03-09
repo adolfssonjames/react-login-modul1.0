@@ -1,17 +1,17 @@
 import React from 'react';
-import CustomHooks from './CustomHooks';
+import CustomHooks from './CustomHooks';                
 import FormValidation from './FormValidation';
 import './Style.css';
 
 
 
 
-const FormCreateAcc = ({ submitForm }) => {
-    const { handleChange, values, handleSubmit, errors } = CustomHooks(submitForm, FormValidation);
+const FormCreateAcc = ({ submitForm }) => {                                       //SubmitForm inpassad från funktion i Form.jsx
+    const { handleChange, values, handleSubmit, errors } = CustomHooks(submitForm, FormValidation);         // destructar values av hooksen från CustomHooks
 
   return (
     <div className="form-content-right">
-        <form className="form" onSubmit={handleSubmit}>
+        <form className="form" onSubmit={handleSubmit}> 
             <h2 className='orbit-text'>JOIN THE ORBIT</h2>
             <h2 className='no-account-text'>
                 Dont have an account? Create one right away and login!
@@ -20,9 +20,9 @@ const FormCreateAcc = ({ submitForm }) => {
             <label htmlFor="username"
                 className="form-label">
                     Username
-            </label>
-                <input id="username" type="text" name='username' className="form-input" placeholder='Enter Username' value={values.username} onChange={handleChange} />
-                {errors.username && <p> {errors.username}</p>}
+            </label>                                                                                                                           
+                <input id="username" type="text" name='username' className="form-input" placeholder='Enter Username' value={values.username} onChange={handleChange} /> 
+                {errors.username && <p> {errors.username}</p>}                                                                                 
         </div>
         <div className="form-inputs">
             <label htmlFor="email"

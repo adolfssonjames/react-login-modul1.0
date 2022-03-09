@@ -8,20 +8,19 @@ import './Style.css';
 const Form = () => {
   const [isSubmit, setIsSubmit] = useState (false);
 
-  function submitForm() {
+  function submitForm() {   //
     setIsSubmit(true);
   }
   
   return (
     
     <div className="form-container">
-    
       <div className="form-content-left">
       <img className="orbit-bild" src="james_circel_orbit_kekw.png" alt="LOGO" />
       </div>
       
       
-      {!isSubmit ? (
+      {!isSubmit ? (                                       //om formulär inte är submittad (? = om det är sant) kör/display koden nedan. ( : = eller/annars ) kör koden nedan
         <FormCreateAcc submitForm={submitForm} /> 
         ) : (
           <FormOk />
