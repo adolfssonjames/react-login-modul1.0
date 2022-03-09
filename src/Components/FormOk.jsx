@@ -12,7 +12,7 @@ const FormOk = () => {
         
         <h1 className='acc'>Account Created, Welcome!</h1>
         
-        <p> You are now logged in :)</p>
+        <p> You are now logged in yay:)</p>
          
         <img className='welcome-gif' src="COZY_SUMMER_DAYS.gif" alt="" />
       
