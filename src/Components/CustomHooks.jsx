@@ -23,7 +23,7 @@ const CustomHooks = (callback, FormValidation) => {     //definerar parameter
 
     const handleSubmit = e => {
         e.preventDefault();                         //hanterar så att sidan inte refreshar sidan by default när man submitar formulär
-
+        
         setErrors(FormValidation(values));
         setIsSubmit(true);                          // om formulär är fylld och clickar på knappen, så körs submit
     };

@@ -5,39 +5,7 @@
   align-items: center;
   justify-content: center;
 }
-.navbar, h2, h3 {
-  color: #fff;
-}
-.login-user-input, .login-pass-input {
-  margin-top: 15px;
-  margin-right: 10px;
-  font-size: larger;
-  outline: none;
-  border-radius: 2px;
-  height: 40px;
-  width: 100%;
-  border: none;
-}
 
-.login-button{
-  margin-top: 40px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  height:40px;
-  width:100%;
-  font-size: larger;
-  border-radius: 2px;
-    background: linear-gradient(
-      270deg,
-      rgb(9, 26, 36) 0%,
-      rgb(2, 167, 170) 100%
-    );
-    border: none;
-    color: #fff;
- 
-  
-}
 .orbit-bild {
   padding-left: 20px;
   padding-top: 40px;
@@ -47,10 +15,10 @@
  
 }
 .orbit-bild2 {
-  height:20%;
-
+  height:25%;
+  margin-left:38%;
 }
-.form-container, .form-container2 {
+.form-container  {
     margin: 35px auto; /* placerar modul-diven  */
     width: 1000px;
     position: relative;
@@ -59,30 +27,23 @@
     grid-template-columns: 1fr 1fr; /* delar upp modul-diven i två delar */
   }
   
-  
-  
   .form-content-left {
     background: linear-gradient(
       45deg,
-      rgba(16, 54, 158, 0.685) 55%,
+      rgba(16, 54, 158, 0.485) 55%,
       rgba(0, 247, 255, 0.849) 100%
     );
     border-radius: 10px 0 0 10px;
     position: relative;
   }
   
-  
-  .form-content-right, .form-container2 {
+  .form-content-right {
     border-radius: 0 10px 10px 0;
     position: relative;
     background: linear-gradient(145deg, rgba(0, 247, 255, 0.849) 0%, rgba(17, 17, 17, 0.603) 60%);
   }
-  .form-container2{
-    border-radius: 10px;
-    width:600px;
-    height: 400px;
-  }
-  .form, .login-form {
+ 
+  .form {
     position: absolute;
     top: 50%;
     left: 50%;
@@ -93,14 +54,6 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-  }
-  
-  .form h1 {
-    font-size: 1rem;
-    text-align: start;
-    width: 80%;
-    margin-bottom: 1rem;
-    color: #fff;
   }
   
   .form-inputs {
@@ -114,11 +67,7 @@
     color: #f00e0e;
   }
   
-  .login-form p {
-    font-size: 0.8rem;
-    margin-top: 0.5rem;
-    color: #f00e0e;
-  }
+  
   .form-label {
     display: inline-block;
     font-size: 0.8rem;
@@ -164,19 +113,8 @@
       rgb(10, 78, 73) 0%,
       rgb(12, 250, 238) 100%
     );
-   
-  }
-  .login-button:hover {
-    cursor: pointer;
-    background: linear-gradient(
-      270deg,
-      rgb(10, 78, 73) 0%,
-      rgb(12, 250, 238) 100%
-    );
-    
   }
   
- 
   .createAcc-text {
     color: #fff;
     font-size:xx-large;
@@ -203,8 +141,7 @@
   justify-content: center; 
   }
 
-  
-  .meny, li {
+  .meny,  a {
     display: flex;
     align-items: center;
     justify-content: center; 
@@ -220,25 +157,25 @@
     border-radius: 2px;
     background: linear-gradient(
       270deg,
-      rgba(255, 255, 255, 0.8) 0%,
+      rgba(20, 70, 114, 0.63) 0%,
       rgba(2, 167, 170,0.8) 100%
     );
     outline: none;
     border: none;
     color: #fff;
-    font-size: 1rem;
+    
   }
   .meny > button:hover {
     cursor: pointer;
     background: linear-gradient(
       270deg,
-      rgba(255, 255, 255, 0.8) 0%,
+      rgba(113, 193, 240, 0.8) 0%,
       rgba(160, 250, 252, 0.8) 100%
     );
     outline: none;
-    border: none;
+    border: 1px solid rgb(255, 255, 255);
     color: #fff;
-    font-size: 1rem;
+    font-size: 0.8rem;
   }
 
   .welcome-gif {
@@ -248,7 +185,6 @@
     border-radius: 15px;
     width:90%;
     opacity: calc(60%);
-   
   }
   
   .welcome-gif2 {
@@ -259,8 +195,6 @@
    opacity: calc(50%);
   }
 
-  
-  
   .login-user-input, .login-pass-input {
     display: block;
     margin-left:25%;
@@ -276,10 +210,6 @@
     color: #595959;
     font-size: 12px;
   }
-  
-  .login-frm {
-    color: #fff;
-  }
 
   .signin-label-user, .signin-label-pwd {
     margin-left:25%;
@@ -293,8 +223,8 @@
     border-radius: 2px;
     background: linear-gradient(
       270deg,
-      rgba(255, 255, 255, 0.8) 0%,
-      rgba(2, 167, 170,0.8) 100%
+      rgba(43, 243, 250, 0.4) 40%,
+      rgba(2, 167, 170,0.6) 100%
     );
     outline: none;
     border: none;
@@ -305,11 +235,11 @@
     cursor: pointer;
     background: linear-gradient(
       270deg,
-      rgba(255, 255, 255, 0.8) 0%,
-      rgba(160, 250, 252, 0.8) 100%
+      rgba(92, 183, 211, 0.8) 40%,
+      rgba(143, 248, 217, 0.8) 100%
     );
     outline: none;
-    border: none;
+    border: 2px solid #fff;
     color: #fff;
     font-size: 1rem;
   }
@@ -319,7 +249,6 @@
   .signin-formdiv {
     margin-top: 2%;
     border-radius: 10px;
-    margin-left: 25%;
    width: 700px;
    height:500px;
     color: #fff;
@@ -328,4 +257,8 @@
       rgba(8, 33, 104, 0.685) 60%,
       rgba(0, 247, 255, 0.849) 100%
       );
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
   }
