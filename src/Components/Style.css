@@ -47,8 +47,8 @@
  
 }
 .orbit-bild2 {
-  height:20%;
-
+  height:25%;
+  margin-left:38%;
 }
 .form-container, .form-container2 {
     margin: 35px auto; /* placerar modul-diven  */
@@ -82,7 +82,7 @@
     width:600px;
     height: 400px;
   }
-  .form, .login-form {
+  .form {
     position: absolute;
     top: 50%;
     left: 50%;
@@ -319,7 +319,6 @@
   .signin-formdiv {
     margin-top: 2%;
     border-radius: 10px;
-    margin-left: 25%;
    width: 700px;
    height:500px;
     color: #fff;
@@ -328,4 +327,8 @@
       rgba(8, 33, 104, 0.685) 60%,
       rgba(0, 247, 255, 0.849) 100%
       );
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
   }
