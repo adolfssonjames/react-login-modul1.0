@@ -8,6 +8,7 @@ const CustomHooks = (callback, FormValidation) => {     //definerar parameter
         password:'',                                    //targetar lösenord i formuläret
         password2:''
     });
+    
     const [errors, setErrors] = useState ({});
     const [isSubmit, setIsSubmit] = useState(false);    //om formulär inte är fylld och clickar på submit sker error och false usestate
 

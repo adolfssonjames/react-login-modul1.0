@@ -1,4 +1,4 @@
-.rubrik {
+.rubrik, h1 {
   color: #fff;
   padding-top: 2%;
   display: flex;
@@ -114,6 +114,11 @@
     color: #f00e0e;
   }
   
+  .login-form p {
+    font-size: 0.8rem;
+    margin-top: 0.5rem;
+    color: #f00e0e;
+  }
   .form-label {
     display: inline-block;
     font-size: 0.8rem;
@@ -171,27 +176,8 @@
     
   }
   
-  .form-input-login {
-    font-size: 0.8rem;
-    margin-top: 10px;
-    color: #fff;
-    width: 80%;
-    text-align: center;
-  }
-  
-  .form-input-login a {
-    text-decoration: none;
-    color: #27cdff;
-    font-weight: 600;
-  }
-
-  .form-login {
-    color: #fff;
-  }
-  .form-login a{
-    color: rgb(136, 255, 209);
-  }
-  .orbit-text {
+ 
+  .createAcc-text {
     color: #fff;
     font-size:xx-large;
   }
@@ -202,7 +188,7 @@
   }
   
   .content-form-ok{
-   
+   padding-top:10%;
     color: #fff;
     background: linear-gradient(
       0deg,
@@ -224,7 +210,7 @@
     justify-content: center; 
     margin:5px;
     list-style: none;
-    text-decoration:wavy;
+    text-decoration:none;
     font-size: larger;
     color: white;
   
@@ -243,7 +229,7 @@
     font-size: 1rem;
   }
   .meny > button:hover {
-    
+    cursor: pointer;
     background: linear-gradient(
       270deg,
       rgba(255, 255, 255, 0.8) 0%,
@@ -256,9 +242,90 @@
   }
 
   .welcome-gif {
-    margin-top: 25px;
-   margin-left:6%;
+    margin-top: 15%;
+   margin-left:5%;
     height: 250px;
     border-radius: 15px;
+    width:90%;
+    opacity: calc(60%);
    
+  }
+  
+  .welcome-gif2 {
+   border-radius: 10px;
+   height: 60%;
+   margin-left: 32%;
+   margin-top: 5%;
+   opacity: calc(50%);
+  }
+
+  
+  
+  .login-user-input, .login-pass-input {
+    display: block;
+    margin-left:25%;
+    margin-bottom:1%;
+    outline: none;
+    border-radius: 2px;
+    height: 40px;
+    width: 50%;
+    border: none;
+  }
+  
+  .login-user-input, .login-pass-input::placeholder {
+    color: #595959;
+    font-size: 12px;
+  }
+  
+  .login-frm {
+    color: #fff;
+  }
+
+  .signin-label-user, .signin-label-pwd {
+    margin-left:25%;
+  }
+
+  .sign-in-btn {
+    margin-left:25%;
+    margin-top:2%;
+    width:50%;
+   height:40px;
+    border-radius: 2px;
+    background: linear-gradient(
+      270deg,
+      rgba(255, 255, 255, 0.8) 0%,
+      rgba(2, 167, 170,0.8) 100%
+    );
+    outline: none;
+    border: none;
+    color: #fff;
+    font-size: 1rem;
+  }
+  .sign-in-btn:hover {
+    cursor: pointer;
+    background: linear-gradient(
+      270deg,
+      rgba(255, 255, 255, 0.8) 0%,
+      rgba(160, 250, 252, 0.8) 100%
+    );
+    outline: none;
+    border: none;
+    color: #fff;
+    font-size: 1rem;
+  }
+  p {
+    color: #fff;
+  }
+  .signin-formdiv {
+    margin-top: 2%;
+    border-radius: 10px;
+    margin-left: 25%;
+   width: 700px;
+   height:500px;
+    color: #fff;
+    background: linear-gradient(
+      45deg,
+      rgba(8, 33, 104, 0.685) 60%,
+      rgba(0, 247, 255, 0.849) 100%
+      );
   }

@@ -1,3 +1,5 @@
+
+
 export default function FormValidation(values) {                //passar/skickar in values
     let errors = {}
 
@@ -16,6 +18,7 @@ export default function FormValidation(values) {                //passar/skickar
 
     if(!values.password) {
         errors.password = "Password required";
+        
     } else if (values.password.length < 6) {
         errors.password = "Password needs to be longer than 6 Characters";
     }
