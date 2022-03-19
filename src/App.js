@@ -24,7 +24,7 @@ function App() {
                 <button><li className='li-link1'> <Link to="/">Create Account</Link></li></button> 
                 <button><li> <Link to="/Login">Login</Link></li></button> 
               </ul>
-          </nav>
+            </nav>
             <Routes>
               <Route exact path="/" element={<Form />}></Route>
               <Route path="/Login" element={<Login />}></Route>
