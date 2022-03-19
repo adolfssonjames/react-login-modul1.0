@@ -22,8 +22,8 @@ const Login = () => {
 
     useEffect (()=> {                                                           //useEffecten körs varje gång datan uppdateras
       localStorage.setItem('user', JSON.stringify(user))                         //localstorage  | skickar in datan med setitem via user input och vid submit
-      localStorage.setItem('password', JSON.stringify(pwd))                     // json.strinify stringifyar vårat object till en json string så att vi kan spara "datan". då det inte går att spara datan som object i localstorage
-    }, [user, pwd]);                                                           // vi kan sedan parsa json.stringen tillbaka till ett object med getitem
+      localStorage.setItem('password', JSON.stringify(pwd))                     // json.strinify stringifyar vårat object till en json string så att vi kan spara "datan". då det inte går att spara datan som object i localstorage. vi kan sedan parsa json.stringen tillbaka till ett object med getitem
+    }, [user, pwd]);                                                           // Varje gång user eller pwd data ändras så körs useEffect
 
     const handleSubmit = async (e) => {
         e.preventDefault();
