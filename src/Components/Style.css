@@ -37,7 +37,7 @@
     position: relative;
   }
   
-  .form-content-right {
+  .form-content-right  {
     border-radius: 0 10px 10px 0;
     position: relative;
     background: linear-gradient(145deg, rgba(0, 247, 255, 0.849) 0%, rgba(17, 17, 17, 0.603) 60%);
