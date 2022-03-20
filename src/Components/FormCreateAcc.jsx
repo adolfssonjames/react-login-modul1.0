@@ -6,8 +6,8 @@ import './Style.css';
 
 
 
-const FormCreateAcc = () => {                                       //SubmitForm inpassad från funktion i Form.jsx
-             // destructar values av hooksen från CustomHooks
+const FormCreateAcc = () => {                                       
+           
  
 
 
